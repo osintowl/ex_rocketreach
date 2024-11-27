@@ -1,14 +1,14 @@
 defmodule ExRocketreach.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.2"
   @source_url "https://github.com/nix2intel/ex_rocketreach"
 
   def project do
     [
       app: :ex_rocketreach,
       version: @version,
-      elixir: "~> 1.14",
+      elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -22,13 +22,12 @@ defmodule ExRocketreach.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {ExRocketreach.Application, []}
     ]
   end
 
   defp deps do
     [
-      {:req, "~> 0.4.0"},
+      {:req, "~> 0.5.7"},
       {:jason, "~> 1.4"},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
