@@ -1,8 +1,8 @@
 defmodule ExRocketreach.MixProject do
   use Mix.Project
 
-  @version "0.1.3"
-  @source_url "https://github.com/nix2intel/ex_rocketreach"
+  @version "0.1.4"
+  @source_url "https://github.com/osintowl/ex_rocketreach"
 
   def project do
     [
