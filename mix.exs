@@ -1,7 +1,7 @@
 defmodule ExRocketreach.MixProject do
   use Mix.Project
 
-  @version "0.1.4"
+  @version "0.1.5"
   @source_url "https://github.com/osintowl/ex_rocketreach"
 
   def project do
@@ -27,7 +27,7 @@ defmodule ExRocketreach.MixProject do
 
   defp deps do
     [
-      {:req, "~> 0.5.7"},
+      {:req, "~> 0.5 or ~> 0.6 or ~> 0.7"},
       {:jason, "~> 1.4"},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
